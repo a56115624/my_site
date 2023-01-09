@@ -1,0 +1,54 @@
+{% extends "base.html"%}
+{%load static%}
+
+{% block title%}
+    My blog
+{% endblock%}
+{%block css_files %}
+    <link rel = "stylesheet" href = "{% static "blog/index.css"%}"/>
+{% endblock %}
+
+
+
+{%block content%}
+    <! header 表示要當返回鍵的東西>
+    <header id = "main-navigation"> 
+        <h1><a href = "">shane's Blog</a></h1>
+    </header>
+    <nav>
+        <h1><a href = ""> All Posts</a></h1>
+    </nav>
+    <section id = "welcome">
+        <header>
+            <img src = "{% static "blog/images/image_6483441.jpg"%}" alt = "shane - The Author Of This Blog"/>
+            <h2>Shane Blog</h2>
+        </header>
+        <p>Hi I am shane and I Love to blog about the tech and the world!</p>
+    </section  >
+    <section id = "last-posts ">
+        <h2> My Lasted  Thoughts <h2>
+        <ul>
+            <li>
+                <article class = "post">
+                    <a href = "">
+                        <img src = "" alt = "Mountion Hiking"/>
+                        <div class = "post__content">
+                            <h3>Mountion Hiking</h3>
+                            <p>
+                                There's nothing like the view you get When hiking in the mountion's!
+                                and I wasn's even prepared for what happend whilst I was enjoying the view!
+                            </p>
+                        </div>
+                    </a>
+                </article>
+            </li>
+        </ul>
+    </section>
+    <section id = "about">
+        <h2>What I do </h2>
+        <p>I love programing , I love to help other's and I enjoy exploring the new technologis in general!</p>
+        <p>
+            My goal is to keep on growing as a develpoer - and I cloud help you to do the same , I'd be very happy!
+        </p>
+    </section>
+{%endblock %}
